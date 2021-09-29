@@ -4,7 +4,7 @@ import Projects from "./components/projects/Projects";
 import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
 import Topbar from "./components/topbar/Topbar";
-import "./appt.scss";
+import "./app.scss";
 
 function App() {
   return (
