@@ -1,7 +1,10 @@
+import React, { useState } from "react";
+
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss";
 
 export default function Portfolio() {
+  const [selected, setSelected] = useState("featured");
   const list = [
     {
       id: "featured",
@@ -75,7 +78,6 @@ export default function Portfolio() {
           />
           <h3>Banking App</h3>
         </div>
-       
       </div>
     </div>
   );
