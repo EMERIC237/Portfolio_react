@@ -10,7 +10,7 @@ import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss";
 
 export default function Portfolio() {
-  const [selected, setSelected] = useState("featured");
+  const [selected, setSelected] = useState("web");
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -37,24 +37,8 @@ export default function Portfolio() {
 
   const list = [
     {
-      id: "featured",
-      title: "Featured",
-    },
-    {
       id: "web",
       title: "Web App",
-    },
-    {
-      id: "mobile",
-      title: "Mobile App",
-    },
-    {
-      id: "design",
-      title: "Design",
-    },
-    {
-      id: "content",
-      title: "Content",
     },
   ];
   return (
@@ -73,7 +57,7 @@ export default function Portfolio() {
       <div className="container">
         {data.map((d) => (
           <div className="item">
-            <img src={d.img} alt="app" />
+            <img src={d.image} alt="app" />
             <h3>{d.title}</h3>
           </div>
         ))}
