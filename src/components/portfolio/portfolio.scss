@@ -38,8 +38,8 @@
   }
 
   .item {
-    width: 220px;
-    height: 150px;
+    width: 300px;
+    height: 200px;
     border-radius: 20px;
     border: 1px solid lightgray;
     margin: 10px 20px;
@@ -59,6 +59,10 @@
     h3 {
       position: absolute;
       font-size: 20px;
+
+      a {
+        color: white;
+      }
     }
 
     img {

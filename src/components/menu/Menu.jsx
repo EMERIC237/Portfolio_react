@@ -5,7 +5,7 @@ export default function Menu({ menuOpen, setMenuOpen }) {
     Home: "#intro",
     Portfolio: "#portfolio",
     Projects: "#projects",
-    Testimonials: "#testimonials",
+    About: "#about",
     Contact: "#contact",
   };
 

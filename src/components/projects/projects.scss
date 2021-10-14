@@ -7,6 +7,13 @@
   justify-content: center;
   position: relative;
 
+  h1{
+    font-size: 50px;
+    position: absolute;
+    top: 20px;
+    z-index: 2;
+  }
+
   .arrow {
     height: 50px;
     position: absolute;

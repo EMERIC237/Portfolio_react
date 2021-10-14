@@ -9,11 +9,11 @@ export default function Intro() {
       showCursor: true,
       backDelay: 1500,
       backSpeed: 60,
-      strings: ["Developer", "Designer", "Content Creator"],
+      strings: ["Software", "Devops"],
     });
   }, []);
   return (
-    <div className="intro" id="intro">
+    <div className="intro" style={{ backgroundImage: "url(/images/backgrounds/anas-alshanti-feXpdV001o4-unsplash.jpg)"}} id="intro">
       <div className="left">
         <div className="imgContainer">
           <img src="images/1.png" alt="a man" />
@@ -24,11 +24,11 @@ export default function Intro() {
           <h2>Hi there, I'm</h2>
           <h1>Emeric Touolac</h1>
           <h3>
-            Software <span ref={textRef}></span>
+          <span ref={textRef}></span> Engineer 
           </h3>
         </div>
         <a href="#portfolio">
-          <img src="images/down.png" alt="down" />
+          <img src="images/arrow.png" alt="down" />
         </a>
       </div>
     </div>

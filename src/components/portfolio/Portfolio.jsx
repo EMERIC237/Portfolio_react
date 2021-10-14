@@ -11,6 +11,7 @@ import "./portfolio.scss";
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("web");
+  const [text, setText] = useState({ display: "none" });
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -42,7 +43,11 @@ export default function Portfolio() {
     },
   ];
   return (
-    <div className="portfolio" id="portfolio">
+    <div
+      className="portfolio"
+      style={{ backgroundImage: "url(/images/backgrounds/portfolio-bg.jpeg)" }}
+      id="portfolio"
+    >
       <h1>Portfolio</h1>
       <ul>
         {list.map((item) => (
@@ -58,7 +63,22 @@ export default function Portfolio() {
         {data.map((d) => (
           <div className="item">
             <img src={d.image} alt="app" />
-            <h3>{d.title}</h3>
+            <h3>
+              <a
+                href={d.link}
+                target="_blank"
+                rel="noreferrer noopener"
+                onMouseEnter={(e) => {
+                  setText({ display: "block" });
+                }}
+                onMouseLeave={(e) => {
+                  setText({ display: "none" });
+                }}
+              >
+                {d.title}
+              </a>
+              <span style={text}>Click to see the project</span>
+            </h3>
           </div>
         ))}
       </div>

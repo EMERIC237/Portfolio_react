@@ -1,51 +1,73 @@
 import "./testimonials.scss";
 
 export default function Testimonials() {
-  const data = [
-    {
-      id: 1,
-      name: "Tom Durden",
-      title: "Senior Developer",
-      img: "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      icon: "assets/twitter.png",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
-    },
-    {
-      id: 2,
-      name: "Alex Kalinski",
-      title: "Co-Founder of DELKA",
-      img: "https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      icon: "assets/youtube.png",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ",
-      featured: true,
-    },
-    {
-      id: 3,
-      name: "Martin Harold",
-      title: "CEO of ALBI",
-      img: "https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      icon: "assets/linkedin.png",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem",
-    },
-  ];
   return (
-    <div className="testimonials" id="testimonials">
-      <h1>Testimonials</h1>
+    <div className="about" style={{ backgroundImage: "url(/images/backgrounds/table.jpg)" }} id="about">
+      <span className="">ABOUT ME</span>
       <div className="container">
-        {data.map((d) => (
-          <div className={d.featured ? "card featured" : "card"}>
-            <div className="top">
-              <img src="assets/right-arrow.png" className="left" alt="" />
-              <img className="user" src={d.img} alt="" />
-              <img className="right" src={d.icon} alt="" />
-            </div>
-            <div className="center">{d.desc}</div>
-            <div className="bottom">
-              <h3>{d.name}</h3>
-              <h4>{d.title}</h4>
+        <div className="left">
+          <h2 className="">Who Am I ?</h2>
+          <div className="present">
+            <h3>I am a software Developer living in Riverdale, Maryland</h3>
+            <p>
+              I use programming and imagination to solve problem and make life
+              better. I love exploring new technologies and being a
+              practitioner, I like to stay on top of latest trends.
+              <br />
+              Going from learning, linux system administrator to devops, I found
+              out my incredible passion for writing actual code.
+              <br />
+              I'm interested in:
+            </p>
+
+            <ol>
+              <li>data science</li>
+              <li>Mathematics</li>
+              <li>personal development</li>
+              <li>reading books</li>
+            </ol>
+            <p>
+              With your permission, we can make things better, please
+              <a style={{color:"red"}} href="#contact">
+                <strong> contact me!</strong>
+              </a>
+            </p>
+          </div>
+        </div>
+        <div className="right">
+          <div className="inside">
+            <span className="">WHAT I DO?</span>
+            <h2 className="">HERE ARE SOME OF MY EXPERTISE:</h2>
+            <div className="slider">
+              <div className="slide">
+                <h3>APP Develpoment</h3>
+                <p>
+                  I also have knowledge of flutter development and have
+                  experience in building android and IOS applications. I also
+                  have live app published on Google Play Store.{" "}
+                </p>
+              </div>
+
+              <div className="slide">
+                <h3>Web Develpoment</h3>
+                <p>
+                  I am a full stack web developer(PERN) and build websites using
+                  HTML, CSS, Javascript, ReactJs.
+                  <br /> I have also good grasp on Node and NoSQL(MongoDb)
+                </p>
+              </div>
+
+              <div className="slide">
+                <h3>Other's Interest</h3>
+                <p>
+                  I also have decent hand in developing website with WordPress.
+                  <br /> Adobe Photoshop, Adobe Illustrator, MS Office, C++,
+                  Github are my other fields of interest.{" "}
+                </p>
+              </div>
             </div>
           </div>
-        ))}
+        </div>
       </div>
     </div>
   );

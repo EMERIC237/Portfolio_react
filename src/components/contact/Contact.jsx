@@ -10,7 +10,11 @@ export default function Contact() {
     setMessage(true);
   };
   return (
-    <div className="contact" id="contact">
+    <div
+      className="contact"
+      style={{ backgroundImage: "url(/images/backgrounds/contact_blue.jpg)" }}
+      id="contact"
+    >
       <div className="left">
         <img src="images/shake.svg" alt="" />
       </div>
