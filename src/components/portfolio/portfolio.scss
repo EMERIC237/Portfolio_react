@@ -33,6 +33,7 @@
     flex-wrap: wrap;
 
     @include mobile {
+      flex-direction: column;
       width: 100%;
     }
   }
@@ -52,7 +53,8 @@
     cursor: pointer;
 
     @include mobile {
-      width: 130px;
+      border-radius: 10%;
+      width: 200px;
       height: 100px;
     }
 
@@ -70,6 +72,7 @@
       height: 100%;
       object-fit: cover;
       z-index: 1;
+      border-radius: 10%;
     }
 
     &:hover {

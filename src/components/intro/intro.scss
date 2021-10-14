@@ -22,7 +22,7 @@
       width: 700px;
       height: 700px;
       background-color: rgba(56, 35, 93, 0.7);
-      border-radius: 50%;
+      border-radius: 20%;
       display: flex;
       align-items: flex-end;
       justify-content: center;
@@ -30,6 +30,8 @@
 
       @include mobile {
         align-items: flex-start;
+        width: 400px;
+        height: 700px;
       }
 
       img {
