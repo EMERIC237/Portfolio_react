@@ -45,7 +45,7 @@ function Projects() {
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
       >
         {data.map((d) => (
-          <div className="container">
+          <div className="containerd">
             <div className="item">
               <div className="left">
                 <div className="leftContainer">

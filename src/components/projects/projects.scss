@@ -2,6 +2,10 @@
 
 .projects {
   background-color: lightgreen;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,7 +50,7 @@
       justify-content: center;
     }
 
-    .container {
+    .containerd {
       width: 100vw;
       display: flex;
       align-items: center;

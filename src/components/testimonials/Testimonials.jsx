@@ -3,8 +3,8 @@ import "./testimonials.scss";
 export default function Testimonials() {
   return (
     <div className="about" style={{ backgroundImage: "url(/images/backgrounds/table.jpg)" }} id="about">
-      <span className="">ABOUT ME</span>
-      <div className="container">
+      <h1 className="">ABOUT ME</h1>
+      <div className="containerd">
         <div className="left">
           <h2 className="">Who Am I ?</h2>
           <div className="present">
