@@ -2,7 +2,11 @@ import "./testimonials.scss";
 
 export default function Testimonials() {
   return (
-    <div className="about" style={{ backgroundImage: "url(/images/backgrounds/table.jpg)" }} id="about">
+    <div
+      className="about"
+      style={{ backgroundImage: "url(/images/backgrounds/table.jpg)" }}
+      id="about"
+    >
       <h1 className="">ABOUT ME</h1>
       <div className="containerd">
         <div className="left">
@@ -11,13 +15,13 @@ export default function Testimonials() {
             <h3>I am a software Developer living in Riverdale, Maryland</h3>
             <p>
               I use programming and imagination to solve problem and make life
-              better. I love exploring new technologies and being a
+              better. I love exploring new technologies &#128187; and being a
               practitioner, I like to stay on top of latest trends.
               <br />
               Going from learning, linux system administrator to devops, I found
               out my incredible passion for writing actual code.
               <br />
-              I'm interested in:
+              <span className="tohide"> I'm interested in:</span>
             </p>
 
             <ol>
@@ -28,7 +32,7 @@ export default function Testimonials() {
             </ol>
             <p>
               With your permission, we can make things better, please
-              <a style={{color:"red"}} href="#contact">
+              <a style={{ color: "red" }} href="#contact">
                 <strong> contact me!</strong>
               </a>
             </p>

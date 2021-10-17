@@ -11,11 +11,14 @@
   justify-content: center;
   position: relative;
 
-  h1{
+  h1 {
     font-size: 50px;
     position: absolute;
     top: 20px;
     z-index: 2;
+    @include mobile {
+      font-size: 20px;
+    }
   }
 
   .arrow {

@@ -9,7 +9,8 @@
   top: 0;
   z-index: 0;
   transition: all 1s ease;
-
+  
+  
   .wrapper {
     padding: 10px 30px;
     display: flex;
@@ -26,6 +27,9 @@
         text-decoration: none;
         color: inherit;
         margin-right: 40px;
+        @include mobile {
+          font-size: 25px;
+        }
       }
 
       .itemContainer {
