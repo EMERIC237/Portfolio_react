@@ -1,6 +1,5 @@
 import "./contact.scss";
 
-import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
@@ -15,19 +14,16 @@ const Contact = () => {
   } = useForm();
 
   const toastifySuccess = () => {
-    toast(
-      "Thank you for your message, we will be in touch in no time! ",
-      {
-        position: "bottom-right",
-        autoClose: 5000,
-        hideProgressBar: true,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: false,
-        className: "submit-feedback success",
-        toastId: "notifyToast",
-      }
-    );
+    toast("Thank you for your message, we will be in touch in no time! ", {
+      position: "bottom-right",
+      autoClose: 5000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: false,
+      className: "submit-feedback success",
+      toastId: "notifyToast",
+    });
   };
   // Function called on submit that uses emailjs to send email of valid contact form
   const onSubmit = async (data) => {
@@ -42,16 +38,21 @@ const Contact = () => {
       };
 
       await emailjs.send(
-        process.env.REACT_APP_SERVICE_ID || "service_dylbcyz",
-        process.env.REACT_APP_TEMPLATE_ID || "template_mo0p3gw",
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         templateParams,
-        process.env.REACT_APP_USER_ID || "user_6uWXQopQ4KsyaYNTDm6Fn"
+        process.env.REACT_APP_USER_ID
       );
 
       reset();
       toastifySuccess();
     } catch (e) {
       console.log(e);
+      console.log(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_USER_ID,
+        process.env.REACT_APP_TEMPLATE_ID
+      );
     }
   };
   return (

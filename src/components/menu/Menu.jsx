@@ -9,8 +9,8 @@ export default function Menu({ menuOpen, setMenuOpen }) {
     Contact: "#contact",
   };
 
-  const navigationList = Object.entries(sectionsWithId).map((section) => (
-    <li onClick={() => setMenuOpen(false)}>
+  const navigationList = Object.entries(sectionsWithId).map((section, index) => (
+    <li key={index} onClick={() => setMenuOpen(false)}>
       <a href={section[1]}>{section[0]}</a>
     </li>
   ));

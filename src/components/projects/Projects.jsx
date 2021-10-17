@@ -33,7 +33,6 @@ function Projects() {
       : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
   };
   return (
-    
     <div
       className="projects"
       style={{ backgroundImage: "url(/images/backgrounds/portfolio-bg.jpeg)" }}
@@ -44,8 +43,8 @@ function Projects() {
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
       >
-        {data.map((d) => (
-          <div className="containerd">
+        {data.map((d, index) => (
+          <div key={index} className="containerd">
             <div className="item">
               <div className="left">
                 <div className="leftContainer">
@@ -58,10 +57,7 @@ function Projects() {
                 </div>
               </div>
               <div className="right">
-                <img
-                  src={d.img}
-                  alt=""
-                />
+                <img src={d.img} alt="" />
               </div>
             </div>
           </div>
