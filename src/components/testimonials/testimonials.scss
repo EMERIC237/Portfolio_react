@@ -15,14 +15,14 @@
     font-size: 20px;
   }
   span {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 
   .containerd {
     display: flex;
     justify-content: space-around;
     margin: 0;
-    font-size: 25px;
+    font-size: 18px;
 
     @include mobile {
       flex-direction: column;
