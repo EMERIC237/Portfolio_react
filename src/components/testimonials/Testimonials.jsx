@@ -14,12 +14,12 @@ export default function Testimonials() {
           <div className="present">
             <h3>I am a software Developer living in Riverdale, Maryland</h3>
             <p>
-              I use programming and imagination to solve problem and make life
+              I use programming and imagination to solve problems and make life
               better. I love exploring new technologies &#128187; and being a
               practitioner, I like to stay on top of latest trends.
               <br />
-              Going from learning, linux system administrator to devops, I found
-              out my incredible passion for writing actual code.
+              Going from learning linux system administrator to devops, I found
+              out my incredible passion for writing codes.
               <br />
               <span className="tohide"> I'm interested in:</span>
             </p>
